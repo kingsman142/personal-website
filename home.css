@@ -1,0 +1,111 @@
+body{
+	background-color: #a1997e;
+	font-family: 'Roboto', Optima, Arial, sans-serif;
+}
+
+::-webkit-scrollbar{
+	display: none;
+}
+
+.resume-buttons{
+	width: 129px;
+	height: 30px;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: white;
+	text-align: center;
+	line-height: 30px;
+	visibility: hidden;
+
+	transition: 0.5s;
+}
+	.resume-buttons:hover{
+		background-color: rgba(0, 0, 0, .6);
+		cursor: pointer;
+
+		transition: 0.5s;
+	}
+
+.icons{
+	margin-top: 112px;
+	position: absolute;
+}
+
+#computer-icon{
+	position: absolute;
+	width: 400px;
+	margin-left: 752px;
+	margin-top: 100px;
+}
+
+#education-icon{
+	width: 110px;
+	position: absolute;
+}
+
+#education-text{
+	position: absolute;
+	margin-left: 120px;
+	margin-top: 30px;
+	font-size: 30px;
+}
+
+#education-wrapper{
+	margin-top: 500px;
+	position: absolute;
+}
+
+#github-icon{
+	margin-left: 1282px;
+}
+
+#kongregate-icon{
+	margin-left: 500px;
+}
+
+#linkedin-icon{
+	margin-left: 1132px;
+}
+
+#pitt-icon{
+	width: 85px;
+	margin-top: 100px;
+	margin-left: 120px;
+}
+
+#my-name{
+	margin-top: 40px;
+	margin-left: 830px;
+	color: black;
+	font-size: 45px;
+	position: absolute;
+}
+
+#my-picture{
+	position: absolute;
+	width: 161px;
+	height: 161px;
+	margin-left: 875px;
+	margin-top: 122.5px;
+}
+
+#resume-div{
+	margin-left: 650px;
+	margin-top: 112px;
+}
+
+#resume-text{
+	position: absolute;
+	margin-top: 150px;
+	text-align: center;
+	width: 100%;
+	color: white;
+}
+
+#view-resume-button{
+	margin-top: 59px;
+}
+
+#download-resume-button{
+	margin-top: 89px;
+}
