@@ -1,2 +1,2 @@
 # personal-website
-jameshahn.tk
+www.jameshahn.tk
