@@ -7,26 +7,26 @@
 		<script type="text/javascript" src="index.js"></script>
 	</head>
 	<body>
+		<div id="my-name">James Hahn</div>
 		<div id="header-wrapper">
-			<div id="my-name">James Hahn</div>
-			<img id="computer-icon" src="computer_logo.png">
-			<img id="my-picture" src="james.jpg">
-			<div id="resume-div" class="icons">
-				<a href="https://drive.google.com/open?id=0B7fok1HbU4q1eFZIVGI3SlExWnc" target="_blank" ><div id="view-resume-button" class="resume-buttons">View</div></a>
-				<a href="JamesHahn_Resume.pdf" download><div id="download-resume-button" class="resume-buttons">Download</div></a>
-				<div id="resume-text">Resume</div>
-				<img src="pdf_logo.png" title="Resume">
-			</div>
-			<a href="https://www.linkedin.com/in/hahnjames" target="_blank" ><img src="linkedin_logo_mini.png" title="LinkedIn" id="linkedin-icon" class="icons"></a>
-			<a href="https://github.com/kingsman142" target="_blank" ><img src="github_logo.png" title="GitHub" id="github-icon" class="icons"></a>
-			<a href="http://www.kongregate.com/games/kingsman142" target="_blank" ><img src="kongregate_logo.png" title="Kongregate" id="kongregate-icon" class="icons"></a>
+			<a href="http://www.kongregate.com/games/kingsman142" target="_blank" id="kongregate-icon"><img src="kongregate_logo.png" title="Kongregate" class="icons"></a>
+			<img id="resume-div" src="pdf_logo.png" title="Resume">
+			<!-- <a href="https://drive.google.com/open?id=0B7fok1HbU4q1eFZIVGI3SlExWnc" target="_blank" ><div id="view-resume-button" class="resume-buttons">View</div></a>
+			<a href="JamesHahn_Resume.pdf" download><div id="download-resume-button" class="resume-buttons">Download</div></a>
+			<div id="resume-text">Resume</div> -->
+			<span id="computer-icon"><img id="computer-icon" src="computer_logo.png"></span>
+			<span id="my-picture"><img src="james.jpg"></span>
+			<span id="linkedin-icon"><a href="https://www.linkedin.com/in/hahnjames" target="_blank"><img src="linkedin_logo_mini.png" title="LinkedIn" class="icons"></a></span>
+			<span id="github-icon"><a href="https://github.com/kingsman142" target="_blank"><img src="github_logo.png" title="GitHub" class="icons"></a></span>
 		</div>
+
 		<div id="education-wrapper">
-			<div id="education-header">
-				<img id="education-icon" src="graduation_cap_logo.png">
-				<div id="education-text">Education</div>
+			<div class="section-header">
+				<img class="section-header-icon" src="graduation_cap_logo.png">
+				<div class="section-header-text">Education</div>
 			</div>
-			<div id="pitt-education">
+			<br/>
+			<div id="pitt-education" class="school-div">
 				<img class="school-icon" src="pitt_logo.svg" title="University of Pittsburgh">
 				<div class="school-info">
 					<div class="school-name">University of Pittsburgh <div class="school-dates">September 2015 - April 2018 (expected)</div></div>
@@ -35,7 +35,7 @@
 					<div class="school-courses">Intermediate Programming with Java, &nbsp;&nbsp;Discrete Structures, &nbsp;&nbsp;Data Structures, <br/>Computer Organization & Assembly Language, &nbsp;&nbsp;Intro to Systems Software</div>
 				</div>
 			</div>
-			<div id="udacity-education">
+			<div id="udacity-education" class="school-div">
 				<img class="school-icon" src="udacity_logo.png" title="Udacity">
 				<div class="school-info">
 					<div class="school-name">Udacity <div class="school-dates">May 2016 - Present</div></div>
@@ -43,7 +43,7 @@
 					<div class="school-courses">Studied machine learning, completing 4 projects, and currently working on my <br/> final, Capstone project.</div>
 				</div>
 			</div>
-			<div id="orrville-education">
+			<div id="orrville-education" class="school-div">
 				<img class="school-icon" src="orrville_logo.png" title="Orrville High School">
 				<div class="school-info">
 					<div class="school-name">Orrville High School <div class="school-dates">August 2011 - May 2015</div></div>
@@ -53,5 +53,11 @@
 				</div>
 			</div>
 		</div>
+		<div id="experience-wrapper">
+			<div class="section-header">
+				<img class="section-header-icon" src="man_desk_logo.png">
+				<div class="section-header-text">Experience</div>
+			<div>
+		<div>
 	</body>
 </html>
