@@ -226,6 +226,10 @@ body{
 	margin-left: 15px;
 }
 
+#school-div-main, #experience-div-main, #projects-div-main{
+	display: none;
+}
+
 #my-picture{
 	position: absolute;
 	margin-left: -278px;
