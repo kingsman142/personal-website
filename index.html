@@ -9,6 +9,7 @@
 	<body>
 		<div id="my-name">James Hahn</div>
 		<div id="header-wrapper">
+			<span id="ludum-dare-icon"><a href="http://ludumdare.com/compo/author/kingsman142/" target="_blank"><img src="ludum_dare_logo.png" title="Ludum Dare" class="icons"></a></span>
 			<span id="kongregate-icon"><a href="http://www.kongregate.com/games/kingsman142" target="_blank"><img src="kongregate_logo.png" title="Kongregate" class="icons"></a></span>
 			<span id="resume-div">
 				<img src="pdf_logo.png" title="Resume" class="icons hoverable">
@@ -17,7 +18,8 @@
 				<div id="resume-text">Resume</div>
 			</span>
 			<span id="computer-icon"><img id="computer-icon" src="computer_logo.png"></span>
-			<span id="my-picture"><img src="james.jpg"></span>
+			<span class="action-button shadow animate green">Go!</span>
+			<span id="my-picture"><img src="james.jpg" id="james-image"></span>
 			<span id="linkedin-icon"><a href="https://www.linkedin.com/in/hahnjames" target="_blank"><img src="linkedin_logo_mini.png" title="LinkedIn" class="icons"></a></span>
 			<span id="github-icon"><a href="https://github.com/kingsman142" target="_blank"><img src="github_logo.png" title="GitHub" class="icons"></a></span>
 		</div>
@@ -28,30 +30,32 @@
 				<span class="section-header-text">Education</span>
 			</div>
 			<br/>
-			<div class="school-div">
-				<img class="school-icon" src="pitt_logo.svg" title="University of Pittsburgh">
-				<div class="school-info">
-					<div class="school-name">University of Pittsburgh <div class="school-dates">September 2015 - April 2018 (expected)</div></div>
-					<div class="school-major">Computer Science</div>
-					<div class="school-gpa">3.972 GPA</div>
-					<div class="school-courses">Intermediate Programming with Java, &nbsp;&nbsp;Discrete Structures, &nbsp;&nbsp;Data Structures, <br/>Computer Organization & Assembly Language, &nbsp;&nbsp;Intro to Systems Software</div>
+			<div id="school-div-main">
+				<div id="pitt-education" class="school-div">
+					<a href="http://www.pitt.edu/" target="_blank"><img class="school-icon" src="pitt_logo.svg" title="University of Pittsburgh"></a>
+					<div class="school-info">
+						<div class="school-name">University of Pittsburgh <div class="school-dates">September 2015 - April 2018 (expected)</div></div>
+						<div class="school-major">Computer Science</div>
+						<div class="school-gpa">3.972 GPA</div>
+						<div class="school-courses">Intermediate Programming with Java, &nbsp;&nbsp;Discrete Structures, &nbsp;&nbsp;Data Structures, <br/>Computer Organization & Assembly Language, &nbsp;&nbsp;Intro to Systems Software</div>
+					</div>
 				</div>
-			</div>
-			<div class="school-div">
-				<img class="school-icon" src="udacity_logo.png" title="Udacity">
-				<div class="school-info">
-					<div class="school-name">Udacity <div class="school-dates">May 2016 - Present</div></div>
-					<div class="school-major">Machine Learning Nanodegree</div>
-					<div class="school-courses">Studied machine learning, completing 4 projects, and currently working on my <br/> final, Capstone project.</div>
+				<div id="udacity-education" class="school-div">
+					<a href="https://www.udacity.com/" target="_blank"><img class="school-icon" src="udacity_logo.png" title="Udacity"></a>
+					<div class="school-info">
+						<div class="school-name">Udacity <div class="school-dates">May 2016 - Present</div></div>
+						<div class="school-major">Machine Learning Nanodegree</div>
+						<div class="school-courses">Studied machine learning, completing 4 projects, and currently working on my <br/> final, Capstone project.  Projects can be found on my GitHub, <a href="https://github.com/kingsman142/Projects/tree/master/Udacity" target="_blank">here</a>.</div>
+					</div>
 				</div>
-			</div>
-			<div class="school-div">
-				<img class="school-icon" src="orrville_logo.png" title="Orrville High School">
-				<div class="school-info">
-					<div class="school-name">Orrville High School <div class="school-dates">August 2011 - May 2015</div></div>
-					<div class="school-major">High School Diploma</div>
-					<div class="school-gpa">4.283 GPA</div>
-					<div class="school-courses">Dual enrolled at the University of Akron and University of Findlay.</div>
+				<div id="orrville-education" class="school-div">
+					<a href="http://orrville.k12.oh.us/" target="_blank"><img class="school-icon" src="orrville_logo.png" title="Orrville High School"></a>
+					<div class="school-info">
+						<div class="school-name">Orrville High School <div class="school-dates">August 2011 - May 2015</div></div>
+						<div class="school-major">High School Diploma</div>
+						<div class="school-gpa">4.283 GPA</div>
+						<div class="school-courses">Dual enrolled at the University of Akron and University of Findlay.</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -59,10 +63,69 @@
 			<div class="section-header">
 				<img class="section-header-icon" src="man_desk_logo.png">
 				<span class="section-header-text">Experience</span>
-			<div>
-			<div class="school-div">
-
 			</div>
-		<div>
+			<br/>
+			<div id="experience-div-main">
+				<div class="business-div">
+					<a href="https://www.udacity.com/" target="_blank"><img class="business-icon" src="udacity_logo.png" title="Udacity"></a>
+					<div class="business-info">
+						<div class="business-name">Udacity <div class="business-dates">July 2016 - Present</div></div>
+						<div class="business-title">Machine Learning Forum Mentor</div>
+						<div class="business-responsibilities">On a daily basis, I answer the questions of Udacity's Machine Learning Nanodegree's<br/> students.  In order to do this, I must know understand machine learning concepts and<br/> appropriate data analysis libraries, such as Sci-kit Learn, NumPy, and Panda (all in Python).</div>
+					</div>
+				</div>
+				<div class="business-div">
+					<a href="http://www.mrisoftware.com/" target="_blank"><img class="business-icon" src="mri_software_logo.png" title="MRI Software"></a>
+					<div class="business-info">
+						<div class="business-name">MRI Software <div class="business-dates">May 2016 - August 2016</div></div>
+						<div class="business-title">Software Engineer Intern</div>
+						<div class="business-responsibilities">Throughout the internship, I worked on several projects.  The main project was a web <br/>application using the ASP.NET framework and the MVC architectural pattern in JavaScript,<br/> AJAX, and C#.  Also, I worked on the back-end of a dynamic news/information navigation bar<br/> viewable to all clients.</div>
+					</div>
+				</div>
+				<div class="business-div">
+					<a href="http://www.pitt.edu/" target="_blank"><img class="business-icon" src="pitt_logo.svg" title="University of Pittsburgh"></a>
+					<div class="business-info">
+						<div class="business-name">University of Pittsburgh <div class="business-dates">January 2016 - April 2016</div></div>
+						<div class="business-title">Undergraduate Teaching Assistant (29 students)</div>
+						<div class="business-responsibilities">Worked as a teaching assistant for CS0007 (Intro to Computer Programming with Java).  <br/>Every week, I held labs to explain object-oriented concepts to students.  In addition, students<br/>could come to my bi-weekly office hours for additional help.  This experience helped<br/>me develop strong skills with patience, leadership, time-management, and explaining concepts smoothly.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="projects-wrapper">
+			<div class="section-header">
+				<img class="section-header-icon" src="code_logo.png">
+				<span class="section-header-text">Projects</span>
+			</div>
+			<br/>
+			<div id="projects-div-main">
+				<div class="project-div">
+					<a href="https://chrome.google.com/webstore/detail/playlist-generator/gcnopleiakgahapanbdcegkccdifbbae" target="_blank"><img class="project-icon" src="playlist_generator_logo.jpg" title="Playlist Generator"></a>
+					<div class="project-info">
+						<div class="project-name">Playlist Generator <div class="project-dates">March 2016 - August 2016</div></div>
+						<div class="project-link"><a href="https://chrome.google.com/webstore/detail/playlist-generator/gcnopleiakgahapanbdcegkccdifbbae" target="_blank">Chrome Web Store</a></div>
+						<div class="project-languages">JavaScript, jQuery, HTML, CSS, Chrome API</div>
+						<div class="project-description">Extracts a person's Chrome bookmarks from a list of input folders and converts YouTube URLs<br/> into an automated playlist.  Solves the problem of bookmarking music and never being able to listen to <br/>all of it in a playlist.  Serves 12 weekly users with ~225 daily impressions.</div>
+					</div>
+				</div>
+				<div class="project-div">
+					<a href="http://jobexplore.rf.gd/" target="_blank"><img class="project-icon" src="job_explore_logo.png" title="Job Explore"></a>
+					<div class="project-info">
+						<div class="project-name">Job Explore <div class="project-dates">July 2016 - August 2016</div></div>
+						<div class="project-link"><a href="https://chrome.google.com/webstore/detail/playlist-generator/gcnopleiakgahapanbdcegkccdifbbae" target="_blank">Website</a></div>
+						<div class="project-languages">JavaScript, jQuery, AJAX, HTML, CSS, PHP5, MySQL, Visual Studio</div>
+						<div class="project-description">This web application was designed to focus on helping teenagers and adults search for careers that<br/> might fit them.  Users can search by occupation or skill to see associated skills and occupations, respectively.<br/>For example, a college student has decided to switch their major to something that suits their skills<br/> (organized, fast-paced, social).  They can search for these skills and find the top occupations that suit them.</div>
+					</div>
+				</div>
+				<div class="project-div">
+					<a href="https://github.com/kingsman142" target="_blank"><img class="project-icon" src="question_mark_logo.png" title="Other Projects!"></a>
+					<div class="project-info">
+						<div class="project-name">Other Projects/Ideas</div>
+						<div class="project-languages">Wanna see more of my personal projects and ideas?</div>
+						<div class="project-description">Head over to my GitHub, <a href="https://github.com/kingsman142" target="_blank">here</a>!</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>

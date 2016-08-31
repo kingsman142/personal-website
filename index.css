@@ -69,6 +69,81 @@ body{
 	width: 85px;
 }
 
+.business-div{
+	width: 750px;
+	margin: 0 auto;
+	height: 170px;
+}
+
+.business-icon{
+	width: 85px;
+}
+
+.business-info{
+	display: inline;
+	position: absolute;
+	margin-left: 10px;
+}
+
+.business-name{
+	font-size: 25px;
+	display: inline;
+}
+
+.business-position{
+	font-size: 16px;
+}
+
+.business-dates{
+	font-size: 18px;
+	color: navy;
+	display: inline;
+}
+
+.business-responsibilities{
+	font-size: 18px;
+	color: maroon;
+	font-style: italic;
+}
+
+.project-div{
+	width: 750px;
+	margin: 0 auto;
+	height: 170px;
+}
+
+.project-icon{
+	width: 85px;
+}
+
+.project-info{
+	display: inline;
+	position: absolute;
+	margin-left: 10px;
+}
+
+.project-name{
+	font-size: 25px;
+	display: inline;
+}
+
+.project-link{
+	font-size: 16px;
+}
+
+.project-dates{
+	font-size: 18px;
+	color: navy;
+	display: inline;
+}
+
+.project-description{
+	font-size: 18px;
+	color: maroon;
+	font-style: italic;
+}
+
+
 .resume-buttons{
 	width: 129px;
 	height: 30px;
@@ -91,6 +166,7 @@ body{
 
 .icons{
 	margin-top: 12px;
+	width: 129px;
 }
 
 #my-name{
@@ -99,6 +175,12 @@ body{
 	text-align: center;
 	color: black;
 	font-size: 45px;
+}
+
+#ludum-dare-icon{
+	margin-left: -365px;
+	margin-top: 0px;
+	position: absolute;
 }
 
 #kongregate-icon{
@@ -115,6 +197,10 @@ body{
 #resume-div{
 	margin-left: -65px;
 	position: absolute;
+}
+
+#school-div-main{
+	display: block;
 }
 
 #resume-text{
@@ -142,11 +228,13 @@ body{
 
 #my-picture{
 	position: absolute;
+	margin-left: -278px;
+	margin-top: 23px;
+	display: none;
+}
+
+#james-image{
 	width: 161px;
-	height: 161px;
-	margin-left: 875px;
-	margin-top: 122.5px;
-	visibility: hidden;
 }
 
 #linkedin-icon{
@@ -160,6 +248,38 @@ body{
 }
 
 #education-wrapper{
-	position: relative;
 	margin-top: 10px;
+}
+
+.animate{
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+.action-button{
+	padding: 10px 20px;
+	border-radius: 80px;
+	font-family: 'Pacifico', cursive;
+	font-size: 12px;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.green{
+	background-color: #82BF56;
+	border-bottom: 5px solid #669644;
+	text-shadow: 0px -2px #669644;
+}
+
+.action-button:active{
+	transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid;
+}
+
+.action-button.animate.shadow.green{
+	position: absolute;
+	margin-top: 230px;
+	margin-left: -307px;
+	z-index: 1;
 }
