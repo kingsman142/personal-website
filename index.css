@@ -1,60 +1,36 @@
 body{
 	background-color: #a1997e;
 	font-family: 'Roboto', Optima, Arial, sans-serif;
+	margin: 0;
 }
 
 ::-webkit-scrollbar{
 	display: none;
 }
 
-.resume-buttons{
-	width: 129px;
-	height: 30px;
-	background-color: rgba(0, 0, 0, 0.3);
-	color: white;
-	text-align: center;
-	line-height: 30px;
-	visibility: hidden;
-
-	transition: 0.5s;
-}
-	.resume-buttons:hover{
-		background-color: rgba(0, 0, 0, .6);
-		cursor: pointer;
-
-		transition: 0.5s;
-	}
-
-.icons{
-	display: inline;
-}
-
 .section-header{
 	text-align: center;
-	display: block;
-	width: 1920px;
-	margin-left: -9px;
+	width: 100%;
 	height: 105px;
 	background-color: rgba(255, 255, 255, .7);
 }
 
 .section-header-icon{
 	width: 95px;
-	float: left;
-	margin-left: 820px;
 	margin-top: 5px;
+	vertical-align: middle;
 }
 
 .section-header-text{
-	position: absolute;
 	width: 100%;
-	margin-top: 30px;
-	margin-left: 40px;
+	margin-left: 10px;
+	vertical-align: middle;
 	font-size: 30px;
 }
 
 .school-div{
-	margin-left: 600px;
+	width: 750px;
+	margin: 0 auto;
 	height: 140px;
 }
 
@@ -93,6 +69,30 @@ body{
 	width: 85px;
 }
 
+.resume-buttons{
+	width: 129px;
+	height: 30px;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: white;
+	text-align: center;
+	line-height: 30px;
+	visibility: hidden;
+	position: absolute;
+	z-index: 1;
+
+	transition: 0.5s;
+}
+	.resume-buttons:hover{
+		background-color: rgba(0, 0, 0, .6);
+		cursor: pointer;
+
+		transition: 0.5s;
+	}
+
+.icons{
+	margin-top: 12px;
+}
+
 #my-name{
 	margin-top: 40px;
 	width: 100%;
@@ -102,7 +102,7 @@ body{
 }
 
 #kongregate-icon{
-	margin-left: -225px;
+	margin-left: -215px;
 	margin-top: 0px;
 	position: absolute;
 }
@@ -113,19 +113,31 @@ body{
 }
 
 #resume-div{
-	margin-left: -75px;
+	margin-left: -65px;
 	position: absolute;
 }
 
 #resume-text{
+	position: absolute;
 	text-align: center;
 	width: 100%;
 	color: white;
+	margin-top: -25px;
+}
+
+#view-resume-button{
+	position: absolute;
+	margin-top: -115px;
+}
+
+#download-resume-button{
+	position: absolute;
+	margin-top: -85px;
 }
 
 #computer-icon{
 	width: 400px;
-	margin-left: 10px;
+	margin-left: 15px;
 }
 
 #my-picture{
