@@ -255,6 +255,17 @@ body{
 	margin-top: 10px;
 }
 
+#my-biography{
+	width: 100%;
+	text-align: center;
+}
+
+#my-motto{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
 .animate{
 	transition: all 0.1s;
 	-webkit-transition: all 0.1s;
