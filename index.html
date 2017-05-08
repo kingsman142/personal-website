@@ -1,143 +1,300 @@
-<html>
-	<head>
-		<title>James Hahn</title>
-		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="index.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script type="text/javascript" src="index.js"></script>
-	</head>
-	<body>
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
 
-			ga('create', 'UA-89581048-1', 'auto');
-			ga('send', 'pageview');
-		</script>
+    <title>James Hahn</title>
 
-		<div id="my-name">James Hahn</div>
-		<div id="my-motto"><i><b>Teacher of people, Builder of things, and Striving to succeed</b></i></div>
-		<div id="header-wrapper">
-			<span id="ludum-dare-icon"><a href="http://ludumdare.com/compo/author/kingsman142/" target="_blank"><img src="ludum_dare_logo.png" title="Ludum Dare" class="icons"></a></span>
-			<span id="kongregate-icon"><a href="http://www.kongregate.com/games/kingsman142" target="_blank"><img src="kongregate_logo.png" title="Kongregate" class="icons"></a></span>
-			<span id="resume-div">
-				<img src="pdf_logo.png" title="Resume" class="icons hoverable">
-				<a href="https://drive.google.com/open?id=0B7fok1HbU4q1Q0ZJOEhqcXh1NGs" target="_blank"><div id="view-resume-button" class="resume-buttons hoverable">View</div></a>
-				<a href="JamesHahn_Resume.pdf" download><div id="download-resume-button" class="resume-buttons hoverable">Download</div></a>
-				<div id="resume-text">Resume</div>
-			</span>
-			<span id="computer-icon"><img id="computer-icon" src="computer_logo.png"></span>
-			<span class="action-button shadow animate green">Go!</span>
-			<span id="my-picture"><img src="james.jpg" id="james-image"></span>
-			<span id="linkedin-icon"><a href="https://www.linkedin.com/in/hahnjames" target="_blank"><img src="linkedin_logo_mini.png" title="LinkedIn" class="icons"></a></span>
-			<span id="github-icon"><a href="https://github.com/kingsman142" target="_blank"><img src="github_logo.png" title="GitHub" class="icons"></a></span>
-			<div id="my-biography"><br/><i>Hello!  I'm a sophomore Computer Science major studying at the University of Pittsburgh, but I'm originally<br/> from a small farm town in Ohio.  Ever since my family got our first computer, I've wanted to figure<br/> out how it works, what makes it <b>do</b> things; that's why my favorite questions to ask are "Why?" and "How?".<br/><br/>With my newfound knowledge of data structures, algorithms, and machine learning in college, I've developed<br/> apps, websites, and programs by myself and in teams through previous work and school experience for<br/> myself and others to enjoy.  What I hope to do with my skills is to innovate products that will<br/> impact the world, impact others, and impact myself.<br/><br/>If you want to know more about me, click any of the below sections to view the content<br/> or click on one of those neat images above!</i><br/><br/><b>Languages:</b> C++, C, C#, Java, Python, JavaScript, Node.js, Ajax, HTML, CSS, PHP, SQL, jQuery, SFML, UnityScript, OpenGL<br/><b>Technologies:</b> MySQL, MySQLi, Unity3D, Git/Github, Amazon Alexa, SQL Server Management Studio, ASP.NET MVC,<br/> Chrome API, TFS, Sci-kit Learn<br/><b>Editors/IDEs:</b> Visual Studio, Eclipse, Spyder, Anaconda, CodeBlocks, Atom<br/><b>Operating Systems:</b> Windows, OS X, Unix/Linux<br/><br/><b>Concepts:</b> Unit testing, Agile Methodology, Version Control, Data Analysis, Machine Learning, Spanish (proficient)</div>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/modernizr.custom.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip(); //Initialize tooltips
+
+            if (navigator.userAgent.match(/Mobile/)) { //If a user is on mobile, they can't mouse over text, so tell them to tap
+                document.getElementById('hover-touch-warning').innerHTML = '*tap text to view';
+            }
+        });
+    </script>
+
+
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-spy="scroll" data-offset="0" data-target="#theMenu">
+    <script>
+        //Google analytics code
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-89581048-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+
+	<!-- Menu (UNCOMMENT MENU BUTTON TO MAKE IT SHOW UP) -->
+	<nav class="menu" id="theMenu">
+		<div class="menu-wrap">
+			<h1 class="logo"><a href="index.html#home">Learn More</a></h1>
+			<!-- <i class="icon-remove menu-close"></i> -->
+			<a href="#home" class="smoothScroll">Home</a>
+			<a href="#about" class="smoothScroll">About</a>
+			<a href="#portfolio" class="smoothScroll">Portfolio</a>
+			<a href="#contact" class="smoothScroll">Contact</a>
+			<a href="https://www.linkedin.com/in/hahnjames" target="_blank"><i class="icon-linkedin"></i></a>
+			<a href="https://www.github.com/kingsman142/" target="_blank"><i class="icon-github"></i></a>
+			<a href="mailto:jamhahn@yahoo.com"><i class="icon-envelope"></i></a>
 		</div>
 
-		<div id="education-wrapper">
-			<div class="section-header">
-				<img class="section-header-icon" src="graduation_cap_logo.png">
-				<span class="section-header-text">Education</span>
+		<!-- Menu button -->
+		<!-- <div id="menuToggle"><i class="icon-reorder"></i></div> -->
+	</nav>
+
+
+
+	<!-- ========== HEADER SECTION ========== -->
+	<section id="home" name="home"></section>
+	<div id="headerwrap">
+		<div class="container">
+			<div class="logo">
+				<!-- LOGO (REMOVED AT THE MOMENT) <img src="assets/img/logo.png"> -->
 			</div>
-			<br/>
-			<div id="school-div-main">
-				<div id="pitt-education" class="school-div">
-					<a href="http://www.pitt.edu/" target="_blank"><img class="school-icon" src="pitt_logo.svg" title="University of Pittsburgh"></a>
-					<div class="school-info">
-						<div class="school-name">University of Pittsburgh <div class="school-dates">September 2015 - April 2018 (expected)</div></div>
-						<div class="school-major">Computer Science</div>
-						<div class="school-gpa">3.962 GPA</div>
-						<div class="school-courses">Intermediate Programming with Java, &nbsp;&nbsp;Discrete Structures, &nbsp;&nbsp;Data Structures, <br/>Computer Organization & Assembly Language, &nbsp;&nbsp;Intro to Systems Software, <br/>Quality Assurance, Algorithm Implementation, Intro to Operating Systems, <br/>Formal Methods in Computer Science</div>
-					</div>
+			<br>
+			<div class="row">
+				<h1>JAMES HAHN</h1>
+				<br>
+				<h3>Programmer. Thinker. Builder.</h3>
+				<br><br>
+                <a href="https://drive.google.com/open?id=0B7fok1HbU4q1Q0ZJOEhqcXh1NGs" target="_blank"><button type="button" class="btn btn-warning">RESUME</button></a>
+                <a href="https://www.github.com/kingsman142" target="_blank"><button type="button" class="btn btn-warning">GITHUB</button></a>
+                <a href="https://www.linkedin.com/in/hahnjames" target="_blank"><button type="button" class="btn btn-warning">LINKEDIN</button></a>
+                <a href="mailto:jamhahn@yahoo.com"><button type="button" class="btn btn-warning">EMAIL</button></a>
+                <br>
+				<div class="col-lg-6 col-lg-offset-3">
 				</div>
-				<div id="udacity-education" class="school-div">
-					<a href="https://www.udacity.com/" target="_blank"><img class="school-icon" src="udacity_logo.png" title="Udacity"></a>
-					<div class="school-info">
-						<div class="school-name">Udacity <div class="school-dates">May 2016 - Present</div></div>
-						<div class="school-major">Machine Learning Nanodegree</div>
-						<div class="school-courses">Studied machine learning, completing 4 projects, and currently working on my <br/> final, Capstone project.  Projects can be found on my GitHub, <a href="https://github.com/kingsman142/Projects/tree/master/Udacity" target="_blank">here</a>.</div>
-					</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /headerwrap -->
+
+
+
+	<!-- ========== ABOUT SECTION ========== -->
+	<section id="about" name="about"></section>
+	<div id="f">
+		<div class="container">
+			<div class="row">
+				<h3>ABOUT ME</h3>
+				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
+
+				<!-- INTRO INFORMATIO-->
+				<div class="col-lg-6 col-lg-offset-3">
+					<p>Currently a full-time student at the University of Pittsburgh. Learning everyday doesn't just stop after college; it follows you throughout life.</p>
+					<p>My love falls with engaging young coders and exciting them about the fascinating world of computer science.</p>
+					<p>Data science, virtual reality, and back-end development are just a few of my interests.  Tacking on algorithms/data structures and CS theory creates my dream job.</p>
+                    <p>In an ideal world, I'd be working in the education, finance, or research & development industry.  But my wide range of interests can take me anywhere!</p>
+                    <p>If I'm not responding to your emails, I'm either watching tennis/soccer, playing sports, busy coding, or watching a new psychological thriller movie.</p>
+                    <p>Currently looking for Summer research opportunities. Contact me now.</p>
+					<p><a href="mailto:jamhahn@yahoo.com?subject=Potential%20Research%20Opportunity&body=Hello%20James,%0D%0A%0D%0A[%20Insert%20message%20here%20]%0D%0A%0D%0ABest,%0D%0A[%20Your%20name%20]"><button type="button" class="btn btn-warning">JUST TAP THIS BUTTON</button></a></p>
 				</div>
-				<div id="orrville-education" class="school-div">
-					<a href="http://orrville.k12.oh.us/" target="_blank"><img class="school-icon" src="orrville_logo.png" title="Orrville High School"></a>
-					<div class="school-info">
-						<div class="school-name">Orrville High School <div class="school-dates">August 2011 - May 2015</div></div>
-						<div class="school-major">High School Diploma</div>
-						<div class="school-gpa">4.283 GPA</div>
-						<div class="school-courses">Dual enrolled at the University of Akron and University of Findlay.</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /f -->
+
+
+    <!-- ========== SKILLS SECTION ========== -->
+	<section id="about" name="about"></section>
+	<div id="f">
+		<div class="container">
+			<div class="row">
+				<h3>TECHNICAL SKILLS</h3>
+				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
+
+				<!-- SKILLS BY CATEGORY-->
+				<div class="col-lg-6 col-lg-offset-3">
+					<p style="color:#f85c37">Languages</p><hr/>
+                    <p>C++, C, C#, Java, Python<br/>JavaScript, Node.js, Ajax, HTML, CSS, PHP, SQL, jQuery<br/>SFML, UnityScript, OpenGL</p>
+                    <p style="color:#f85c37">Technologies</p><hr/>
+                    <p>MySQL, MySQLi, Unity3D, Git/Github, Amazon Alexa<br/>SQL Server Management Studio, ASP.NET MVC<br/>Google Chrome API, TFS, Sci-kit Learn</p>
+                    <p style="color:#f85c37">Concepts</p><hr/>
+                    <p>Unit testing, Agile Methodology, Version Control<br/>Data Analysis, Machine Learning, Spanish (proficient)</p>
+                    <p style="color:#f85c37">Operating Systems</p><hr/>
+                    <p>Windows, OS X, Unix/Linux</p>
+                </div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /f -->
+
+    <div id="f">
+		<div class="container">
+			<div class="row">
+				<h3>EXPERIENCE</h3>
+                <p id="hover-touch-warning">*hover over text</p>
+				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
+
+				<!-- SKILLS BY CATEGORY-->
+				<div class="col-lg-6 col-lg-offset-3">
+					<p style="color:#f85c37">Work</p><hr/>
+                    <p style="white-space: pre-line;"><span data-toggle="tooltip" title="June-August 2017&#10;&#10;Currently a work in progress -- will update soon.">Software Engineer Intern (JP Morgan Chase, Chicago IL)*</span><br/><span data-toggle="tooltip" title="July 2016 - Present&#10;&#10;On a daily basis, I answer the questions of Udacity's Machine Learning Nanodegree's students. In order to do this, I must know understand machine learning concepts and appropriate data analysis libraries, such as Sci-kit Learn, NumPy, and Pandas (all in Python).">Machine Learning Forum Mentor (Udacity, remote)*</span><br/><span data-toggle="tooltip" title="May-August 2016&#10;&#10;Throughout the internship, I worked on several projects. The main project was a web application using the ASP.NET framework and the MVC architectural pattern in JavaScript, AJAX, and C#. Also, I worked on the back-end of a dynamic news/information navigation bar viewable to all clients, which was put into production.">Software Engineer Intern (MRI Software, Solon OH)*</span><br/><span data-toggle="tooltip" title="January-April 2016&#10;&#10;Worked as a teaching assistant for CS0007 (Intro to Computer Programming with Java).  Every week, I held labs to explain object-oriented concepts to 29 students. In addition, students could come to my bi-weekly office hours for additional help. This experience helped me develop strong skills with patience, leadership, time-management, and explaining concepts smoothly.">Undergraduate Teaching Assistant (Uni. of Pittsburgh, Pittsburgh PA)*</span></p>
+                    <p style="color:#f85c37">Leadership</p><hr/>
+                    <p>University of Pittsburgh Computer Science Club (Vice-President, 2017)<br/>Undergraduate Teaching Assistant (University of Pittsburgh, 2016)<br/>Tech Club Co-founder and Officer (Orrville High School, 2014)</p>
+                    <p style="color:#f85c37">Hackathons</p><hr/>
+                    <p>Ludum Dare #26, SteelHacks 2016, PittApps 2016, MHacks 8 2016, JP Morgan Code for Good 2016, Pitt Challenge 2017 <span style="color:#f85c37">(1st place)</span>, TartanHacks 2017, CMU Datathon 2017 <span style="color:#f85c37">(Finalist)</span></p>
+                </div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /f -->
+
+	<!-- ========== CAROUSEL SECTION ========== -->
+	<section id="portfolio" name="portfolio"></section>
+	<div id="f">
+		<div class="container">
+			<div class="row centered">
+				<h3>SOME PROJECTS</h3>
+				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
+
+				<div class="col-lg-6 col-lg-offset-3">
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner">
+							<div class="item active centered">
+								<!-- <img class="img-responsive" src="assets/img/c1.png" alt=""> -->
+                                <div class="card-group img-responsive">
+                                  <div class="card left-card">
+                                    <img class="card-img-top left-card" src="assets/img/playlist-generator-logo.jpg" alt="Playlist Generator">
+                                    <div class="card-block">
+                                      <h4 class="card-title"><b>Playlist Generator</b></h4>
+                                      <p class="card-text">Extracts a person's Chrome bookmarks from a list of input folders and converts YouTube URLs into an automated playlist.  <!--Solves the problem of bookmarking music and never being able to listen to  all of it in a playlist.  -->Serves <b>45 weekly users</b> with ~225 daily impressions.  Created with JavaScript, HTML, CSS, and the Google Chrome API.</p>
+                                    </div>
+                                    <div class="card-footer left-footer">
+                                      <small class="text-muted">March-August 2016</small>
+                                      <a href="https://github.com/kingsman142/Projects/tree/master/Playlist" target="_blank"><button type="button" class="card-btn btn btn-warning">View</button></a>
+                                    </div>
+                                  </div>
+                                  <div class="card right-card">
+                                    <img class="card-img-top right-card" src="assets/img/diagnose-me-logo-fixed.png" alt="Diagnose Me">
+                                    <div class="card-block">
+                                      <h4 class="card-title"><b>Diagnose Me</b></h4>
+                                      <p class="card-text">An Amazon Alexa skill that provides a preliminary self-diagnosis to the user by listing their 3 most common illnesses from their symptoms.  Created and <b>won 1st place</b> at the Pitt Challenge, a 24-hour healthcare hackathon hosted at the University of Pittsburgh.  Created with Node.js and several other services.</p>
+                                    </div>
+                                    <div class="card-footer right-footer">
+                                      <small class="text-muted">February 2017</small>
+                                      <a href="https://github.com/kingsman142/pitt-challenge" target="_blank"><button type="button" class="card-btn btn btn-warning">View</button></a>
+                                    </div>
+                                  </div>
+                                </div>
+							</div>
+                            <div class="item centered">
+                                <div class="card-group img-responsive">
+                                  <div class="card left-card">
+                                    <img class="card-img-top left-card" src="assets/img/job-explore-logo.png" alt="Job Explore">
+                                    <div class="card-block">
+                                      <h4 class="card-title"><b>Job Explore</b></h4>
+                                      <p class="card-text">Helps teenagers and adults search for careers that might fit them. Users can search by occupation or skill to see associated skills and occupations, respectively.  After searching their set of skills, they'll discover exciting new occupations that best suit them!  Created with PHP5, MySQL, JavaScript, HTML, and CSS.</p>
+                                    </div>
+                                    <div class="card-footer left-footer">
+                                      <small class="text-muted">July-August 2016</small>
+                                      <a href="https://github.com/kingsman142/courses-website" target="_blank"><button type="button" class="card-btn btn btn-warning">View</button></a>
+                                    </div>
+                                  </div>
+                                  <div class="card right-card">
+                                    <img class="card-img-top right-card" src="assets/img/random-terrain-logo.png" alt="Random Terrain Generator">
+                                    <div class="card-block">
+                                      <h4 class="card-title"><b>Random Terrain Gen.</b></h4>
+                                      <p class="card-text">A random terrain generator using 2 algorithms: Midpoint Displacement (<b>2D terrain</b>) and Diamond-Square (<b>3D terrain</b>).  Allowed me to mess around with a low-level graphics library for the first time.  Pictures/video of each algorithm are on my Github.  Created with LWJGL, a Java binding for OpenGL.</p>
+                                    </div>
+                                    <div class="card-footer right-footer">
+                                      <small class="text-muted">January 2016</small>
+                                      <a href="https://github.com/kingsman142/Projects/tree/master/Random%20terrain" target="_blank"><button type="button" class="card-btn btn btn-warning">View</button></a>
+                                    </div>
+                                  </div>
+                                </div>
+							</div>
+                            <div class="item centered">
+                                <div class="card-group img-responsive">
+                                  <div class="card left-card">
+                                    <img class="card-img-top left-card" src="assets/img/default-logo.png" alt="Playlist Generator">
+                                    <div class="card-block">
+                                      <h4 class="card-title"><b>Udacity Projects</b></h4>
+                                      <p class="card-text">In Udacity's Machine Learning Nanodegree, I have learned about unsupervised, supervised, and reinforcement learning using a series of different models.  I have completed 5 projects and have an ongoing Capstone project.  Written in Python with libraries Scikit-learn, NumPy, Pandas, and OpenCV.</p>
+                                    </div>
+                                    <div class="card-footer left-footer">
+                                      <small class="text-muted">May-August 2016</small>
+                                      <a href="https://github.com/kingsman142/Projects/tree/master/Udacity" target="_blank"><button type="button" class="card-btn btn btn-warning">View</button></a>
+                                    </div>
+                                  </div>
+                                  <div class="card right-card">
+                                    <img class="card-img-top right-card" src="assets/img/github-logo.png" alt="Diagnose Me">
+                                    <div class="card-block">
+                                      <h4 class="card-title"><b>Future Projects</b></h4>
+                                      <p class="card-text">I'm always working on something new.  Whether it's with data science, games, web applications, low-level applications, or hackathon projects, you can find my new stuff on my Github!</p>
+                                    </div>
+                                    <div class="card-footer right-footer">
+                                      <small class="text-muted">Always Ongoing!</small>
+                                      <a href="https://github.com/kingsman142/" target="_blank"><button type="button" class="card-btn btn btn-warning">View</button></a>
+                                    </div>
+                                  </div>
+                                </div>
+							</div>
+							<!-- <div class="item centered"> THIS IS A SAMPLE CAROUSEL ITEM THAT CAME WITH THE TEMPLATE
+								<img class="img-responsive" src="assets/img/c3.png" alt="">
+							</div> -->
+						</div>
+						<br>
+						<br>
+						<ol class="carousel-indicators">
+						    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+						</ol>
 					</div>
+				</div><!-- col-lg-8 -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</div>	<!-- f -->
+
+	<!-- ========== CONTACT SECTION ========== -->
+	<section id="contact" name="contact"></section>
+	<div id="f">
+		<div class="container">
+			<div class="row">
+				<h3>CONTACT ME</h3>
+				<p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
+
+				<div class="col-lg-6 col-lg-offset-3">
+					<p>jamhahn@yahoo.com</p>
+                    <p>330 - 601 - 6694</p>
 				</div>
 			</div>
 		</div>
-		<div id="experience-wrapper">
-			<div class="section-header">
-				<img class="section-header-icon" src="man_desk_logo.png">
-				<span class="section-header-text">Experience</span>
-			</div>
-			<br/>
-			<div id="experience-div-main">
-				<div class="business-div">
-					<a href="https://www.udacity.com/" target="_blank"><img class="business-icon" src="udacity_logo.png" title="Udacity"></a>
-					<div class="business-info">
-						<div class="business-name">Udacity <div class="business-dates">July 2016 - Present</div></div>
-						<div class="business-title">Machine Learning Forum Mentor</div>
-						<div class="business-responsibilities">On a daily basis, I answer the questions of Udacity's Machine Learning Nanodegree's<br/> students.  In order to do this, I must know understand machine learning concepts and<br/> appropriate data analysis libraries, such as Sci-kit Learn, NumPy, and Panda (all in Python).</div>
-					</div>
-				</div>
-				<div class="business-div">
-					<a href="http://www.mrisoftware.com/" target="_blank"><img class="business-icon" src="mri_software_logo.png" title="MRI Software"></a>
-					<div class="business-info">
-						<div class="business-name">MRI Software <div class="business-dates">May 2016 - August 2016</div></div>
-						<div class="business-title">Software Engineer Intern</div>
-						<div class="business-responsibilities">Throughout the internship, I worked on several projects.  The main project was a web <br/>application using the ASP.NET framework and the MVC architectural pattern in JavaScript,<br/> AJAX, and C#.  Also, I worked on the back-end of a dynamic news/information navigation bar<br/> viewable to all clients.</div>
-					</div>
-				</div>
-				<div class="business-div">
-					<a href="http://www.pitt.edu/" target="_blank"><img class="business-icon" src="pitt_logo.svg" title="University of Pittsburgh"></a>
-					<div class="business-info">
-						<div class="business-name">University of Pittsburgh <div class="business-dates">January 2016 - April 2016</div></div>
-						<div class="business-title">Undergraduate Teaching Assistant (29 students)</div>
-						<div class="business-responsibilities">Worked as a teaching assistant for CS0007 (Intro to Computer Programming with Java).  <br/>Every week, I held labs to explain object-oriented concepts to students.  In addition, students<br/>could come to my bi-weekly office hours for additional help.  This experience helped<br/>me develop strong skills with patience, leadership, time-management, and explaining concepts smoothly.</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="projects-wrapper">
-			<div class="section-header">
-				<img class="section-header-icon" src="code_logo.png">
-				<span class="section-header-text">Projects</span>
-			</div>
-			<br/>
-			<div id="projects-div-main">
-				<div class="project-div">
-					<a href="https://chrome.google.com/webstore/detail/playlist-generator/gcnopleiakgahapanbdcegkccdifbbae" target="_blank"><img class="project-icon" src="playlist_generator_logo.jpg" title="Playlist Generator"></a>
-					<div class="project-info">
-						<div class="project-name">Playlist Generator <div class="project-dates">March 2016 - August 2016</div></div>
-						<div class="project-link"><a href="https://chrome.google.com/webstore/detail/playlist-generator/gcnopleiakgahapanbdcegkccdifbbae" target="_blank">Chrome Web Store</a></div>
-						<div class="project-languages">JavaScript, jQuery, HTML, CSS, Chrome API</div>
-						<div class="project-description">Extracts a person's Chrome bookmarks from a list of input folders and converts YouTube URLs<br/> into an automated playlist.  Solves the problem of bookmarking music and never being able to listen to <br/>all of it in a playlist.  Serves 12 weekly users with ~225 daily impressions.</div>
-					</div>
-				</div>
-				<div class="project-div">
-					<a href="http://jobexplore.rf.gd/" target="_blank"><img class="project-icon" src="job_explore_logo.png" title="Job Explore"></a>
-					<div class="project-info">
-						<div class="project-name">Job Explore <div class="project-dates">July 2016 - August 2016</div></div>
-						<div class="project-link"><a href="http://jobexplore.rf.gd/" target="_blank">Website</a></div>
-						<div class="project-languages">JavaScript, jQuery, AJAX, HTML, CSS, PHP5, MySQL, Visual Studio</div>
-						<div class="project-description">This web application was designed to focus on helping teenagers and adults search for careers that<br/> might fit them.  Users can search by occupation or skill to see associated skills and occupations, respectively.<br/>For example, a college student has decided to switch their major to something that suits their skills<br/> (organized, fast-paced, social).  They can search for these skills and find the top occupations that suit them.</div>
-					</div>
-				</div>
-				<div class="project-div">
-					<a href="https://github.com/kingsman142" target="_blank"><img class="project-icon" src="question_mark_logo.png" title="Other Projects!"></a>
-					<div class="project-info">
-						<div class="project-name">Other Projects/Ideas</div>
-						<div class="project-languages">Wanna see more of my personal projects and ideas?</div>
-						<div class="project-description">Head over to my GitHub, <a href="https://github.com/kingsman142" target="_blank">here</a>!</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</body>
+	</div>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script src="assets/js/classie.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/smoothscroll.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
 </html>
