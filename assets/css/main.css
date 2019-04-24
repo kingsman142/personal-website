@@ -9,9 +9,9 @@
 
 body {
   background-color: #f2f2f2;
-    font-family: 'EB Garamond', serif;
+    font-family: 'Roboto', serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 14px;
     color: #555;
 
     -webkit-font-smoothing: antialiased;
@@ -20,7 +20,7 @@ body {
 
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Black', sans-serif;
     font-weight: 300;
     color: #333;
 }
@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Paragraph & Typographic */
 p {
     line-height: 28px;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
 }
 
 .centered {
@@ -110,7 +110,7 @@ a:after {
 	color: white;
 	font-size: 30px;
 	font-weight: 100;
-    font-family: 'EB Garamond', serif;
+    font-family: 'Roboto', serif;
     font-style: oblique;
 }
 
@@ -123,11 +123,15 @@ a:after {
 
 /* Footer Wrap */
 
+.h3-header {
+    text-align: center
+}
+
 #f {
 	background: #1a1a1a;
 	padding-top: 70px;
 	padding-bottom: 70px;
-	text-align: center
+	text-align: left
 }
 
 #f h3 {
@@ -144,7 +148,45 @@ a:after {
 }
 
 #f p {
-	font-size: 20px;
+	font-size: 16px;
+	color: #f2f2f2;
+}
+
+.news {
+    color: #f2f2f2;
+    padding-bottom: 10px;
+}
+
+.orange {
+    color: #f85c37;
+}
+
+.light-orange {
+    color: #ffcc05;
+}
+
+.job-dates {
+    color: #dcdcdc;
+    font-style: italic;
+    font-size: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.job-description {
+    color: #c6c6c6;
+    font-style: italic;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.header {
+    color: #f85c37 !important;
+    font-size: 20px !important;
+}
+
+.job-title {
+	font-size: 16px;
 	color: #f2f2f2;
 }
 
@@ -179,7 +221,7 @@ a:after {
 }
 
 .menu h1.logo a {
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	font-weight: 700;
 	letter-spacing: 0.15em;
@@ -330,9 +372,12 @@ a:after {
 }
 
 .left-card{
-    border-right: 1px solid #dadada;
+    /*border-right: 1px solid #dadada;
     border-bottom-left-radius: 6px !important;
-    border-top-left-radius: 6px;
+    border-top-left-radius: 6px;*/
+    border: 1px solid white;
+    border-radius: 1px !important;
+    margin-bottom: 5px;
 }
 
 .right-card{
@@ -349,7 +394,7 @@ a:after {
 .card-img-top{
     border-bottom-left-radius: 0px !important;
     border-bottom-right-radius: 0px !important;
-    width: 100%;
+    width: 150px;
 }
 
 .card-title{
@@ -360,7 +405,7 @@ a:after {
 .card-text{
     color: black !important;
     text-align: left;
-    font-size: 185% !important;
+    font-size: 125% !important;
     line-height: 120% !important;
 }
 
@@ -393,7 +438,7 @@ a:after {
 
 .text-muted{
     color: #636c72 !important;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 @media only screen and (max-width: 767px){ /* for mobile */
