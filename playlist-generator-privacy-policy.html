@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <title>James Hahn</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/modernizr.custom.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip(); //Initialize tooltips
+
+            if (navigator.userAgent.match(/Mobile/)) { //If a user is on mobile, they can't mouse over text, so tell them to tap
+                document.getElementById('hover-touch-warning').innerHTML = '*tap text to view';
+            }
+        });
+    </script>
+
+
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-spy="scroll" data-offset="0" data-target="#theMenu">
+    <script>
+        //Google analytics code
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-89581048-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+
+	<!-- Menu (UNCOMMENT MENU BUTTON TO MAKE IT SHOW UP) -->
+	<nav class="menu" id="theMenu">
+		<div class="menu-wrap">
+			<h1 class="logo"><a href="index.html#home">Learn More</a></h1>
+			<!-- <i class="icon-remove menu-close"></i> -->
+			<a href="#home" class="smoothScroll">Home</a>
+			<a href="#about" class="smoothScroll">About</a>
+			<a href="#portfolio" class="smoothScroll">Portfolio</a>
+			<a href="#contact" class="smoothScroll">Contact</a>
+			<a href="https://www.linkedin.com/in/hahnjames" target="_blank"><i class="icon-linkedin"></i></a>
+			<a href="https://www.github.com/kingsman142/" target="_blank"><i class="icon-github"></i></a>
+			<a href="mailto:jamhahn@yahoo.com"><i class="icon-envelope"></i></a>
+		</div>
+
+		<!-- Menu button -->
+		<!-- <div id="menuToggle"><i class="icon-reorder"></i></div> -->
+	</nav>
+
+
+
+	<!-- ========== HEADER SECTION ========== -->
+	<section id="home" name="home"></section>
+	<div id="headerwrap">
+		<div class="container">
+			<div class="logo">
+				<!-- LOGO (REMOVED AT THE MOMENT) <img src="assets/img/logo.png"> -->
+			</div>
+			<br>
+			<div class="row">
+				<h1>James Hahn</h1>
+				<br>
+				<h3>Programmer. Thinker. Builder.</h3>
+				<br><br>
+                <a href="https://drive.google.com/open?id=0B7fok1HbU4q1Q0ZJOEhqcXh1NGs" target="_blank"><button type="button" class="btn btn-warning">RESUME</button></a>
+                <a href="https://www.github.com/kingsman142" target="_blank"><button type="button" class="btn btn-warning">GITHUB</button></a>
+                <a href="https://www.linkedin.com/in/hahnjames" target="_blank"><button type="button" class="btn btn-warning">LINKEDIN</button></a>
+                <a href="mailto:jamhahn@yahoo.com"><button type="button" class="btn btn-warning">EMAIL</button></a>
+                <br>
+				<div class="col-lg-6 col-lg-offset-3">
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /headerwrap -->
+
+    <!-- ========== NEWS SECTION ========== -->
+    <section id="news" name="news"></section>
+    <div id="f">
+        <div class="container">
+            <div class="row">
+                <h3 class="h3-header">Playlist Generator Privacy Policy</h3>
+                <p class="centered"><i class="icon icon-circle"></i><i class="icon icon-circle"></i><i class="icon icon-circle"></i></p>
+
+                <div class="col-lg-6 col-lg-offset-3 body-text">
+                    <div class="news"><span class="orange">What data is collected?</span> The data collected by this extension is minimal. The extension's sole purpose is to utilize the Google Chrome bookmarks, stored on the user's local system, to create a window looping through said bookmarks. No login credentials, user authentication credentials, location, usage data, or otherwise private/confidential information pertaining to the user is collected. The extension simply sifts through a user's bookmarks until it finds the folder names input by the user, and keeps a list of those bookmarks until the extension is closed, which is when almost all data is deleted. The only data not deleted is to improve future usage of the extension and is not related to any user's private information. To find out which data is not deleted upon closing the extension, please read the following section.</div>
+                    <div class="news"><span class="orange">How do you use the information?</span> As mentioned above, a user's bookmark information is utilized to create a window and navigate through lists of a user's bookmarks as specified by them. When a song or video finishes, a new link from the user's list of bookmarks is randomly chosen and the window navigates to that new link/video. When the extension comes across a video that is "No longer available" or "Unavailable in your country" or otherwise unplayable due to some YouTube error, this video's link is stored list of banned links. The extension saves a cookie that simply stores all of these links such that when the user opens the extension anytime in the future, these banned songs will be remembered, and the extension will never visit them again since the error will occur once again. As such, this list of banned songs is the only information kept and stored locally on a user's computer after closing the Playlist Generator extension. None of the data is sent to any other part of the internet, including APIs, 3rd parties, websites, or any other form of display. The banned link list is stored locally on a user's browser.</div>
+                    <div class="news"><span class="orange">What information do you share?</span> Absolutely none of the information utilized in the Playlist Generator extension is shared with 3rd party services or companies, including companies. All data utilized by the extension is solely used for the extension's functionality.</div>
+            </div>
+        </div><!-- /container -->
+    </div><!-- /f -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script src="assets/js/classie.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/smoothscroll.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
